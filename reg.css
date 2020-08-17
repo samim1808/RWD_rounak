@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html{
+      font-size: 62.5%;
+  }
+
+  
+
+  body{
+     background-image: url(bg.jpg);
+     /* background: linear-gradient(RED,BLUE); */
+     background-size: cover;
+     
+     background-repeat: no-repeat;
+     font-family:'Montserrat', sans-serif ;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     min-height: 100vh;
+     width: 100vw;
+     
+  }
+
+  .container{
+    background-color: #fff;
+    border-radius: 1rem;
+    overflow: hidden;
+    
+    width: 36%;
+    
+  }
+
+  .header{
+      background: linear-gradient(to left, #e27024, #d5e034);
+      padding: 3rem 0rem;
+  }
+
+  .header h2{
+      color: #222;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.4rem;
+      text-transform: uppercase;
+      text-align: center;
+  }
+
+  .form{
+      padding: 2rem;
+
+  }
+  
+  .form-control{
+      margin-bottom: 3rem;
+      position: relative;
+      font-size: 2rem;
+      font-weight: bold;
+  }
+
+  .form-control label{
+      display: inline-block;
+      margin-bottom: 0.5rem;
+      
+  }
+
+  .form-control input{
+      width: 100%;
+      border: 0.2rem solid #f0f0f0;
+      border-radius: 0.6rem;
+      display: block;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.2rem;
+      
+  }
+
+  .form-control input:focus{
+      outline: 0;
+      border-color: gray;
+  }
+  
+  .form-control.success input{
+      border-color: rgb(15, 224, 32);
+  }
+
+  .form-control.error input{
+      border-color: red;
+  }
+
+    .form-control i{
+      position: absolute;  /* eikhane error msg er symbol 2 to aksathe combaine hai jabe nahole alalda alada thakbe*/
+      right: 4%;
+      margin: 0%;
+      visibility: hidden;
+    }
+ 
+   .form-control.success i.fa-check-circle {  /* jakhon success vabe input karbe green habe*/
+      color: rgb(15, 224, 32);
+      visibility:  visible;
+   }
+   
+
+   .form-control.error i.fa-exclamation-circle {  /* jakhon wrong input debe takhon red hai jabe*/
+      color: red;
+      visibility: visible;  
+   }
+
+
+   .form-control small{
+    color: red;
+    position: absolute;
+  
+    left: 0;
+    visibility: hidden;
+}
+
+ 
+  .form-control.error small{
+      visibility: visible;
+  }
+
+  .form .btn{
+      background:linear-gradient(to right, #08db24,#c9ff04);
+      border-radius: 1.1rem;
+      border: none;
+      outline: none;
+      color: black;
+      display: block;
+      font-family:'Montserrat', sans-serif;
+      font-size: 2rem;
+      padding: 1.6rem 0rem;
+      margin-top: 2rem;
+      width: 100%;
+      font-weight: bold;
+      text-transform: uppercase;
+      
+  }
+
+  .form .btn:hover{
+      background: linear-gradient(to left,  #d5e034 , #e27024);
+  }
+
+
+  @media(max-width:1300px){
+    html{
+        font-size: 60%;
+    }
+    .container{
+               
+        width: 72%;
+        
+      }
+  }
+
+  
+  @media(max-width:998px){
+    html{
+      font-size: 60%;
+    }
+    .container{
+               
+        width: 82%;
+        
+      }
+  }
+
+  @media(max-width:767px){
+    html{
+      font-size: 45%;
+    }
+    .container{
+               
+        width: 76%;
+        
+      }
+  }
+  
